@@ -1,0 +1,21 @@
+{
+  "name": "svg-favicon-demo",
+  "version": "1.0.0",
+  "main": "docs/index.html",
+  "scripts": {
+    "html:dev": "pug src/index.pug --out docs --pretty --watch",
+    "html:prod": "pug src/index.pug --out docs",
+    "watch": "npm-run-all --parallel html:dev",
+    "start": "npm run watch",
+    "build": "npm-run-all html:prod",
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": "git@github.com:haribote/svg-favicon-demo.git",
+  "author": "KIMURA Tetsuro <haribote.nobody@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.0.1",
+    "pug": "^2.0.0-beta10",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
