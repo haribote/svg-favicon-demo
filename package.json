@@ -4,7 +4,7 @@
   "main": "docs/index.html",
   "scripts": {
     "html:dev": "pug src/index.pug --out docs --pretty --watch",
-    "html:prod": "pug src/index.pug --out docs",
+    "html:prod": "pug src/index.pug --out docs --pretty",
     "watch": "npm-run-all --parallel html:dev",
     "start": "npm run watch",
     "build": "npm-run-all html:prod",
